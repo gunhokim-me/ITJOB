@@ -54,6 +54,12 @@
 		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.7.30</version>
+		</dependency>
 
 
 		<!-- spring-web -->
@@ -79,7 +85,6 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -92,17 +97,11 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
-			<version>1.7.30</version>
 		</dependency>
 
 		<!-- junit -->
@@ -113,15 +112,6 @@
 			<version>4.13.1</version>
 		</dependency>
 
-		<!-- logback -->
-		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.2.3</version>
-			<!-- <scope>test</scope> -->
-		</dependency>
-		
 		<!-- jstl -->
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
@@ -130,18 +120,27 @@
 			<version>1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+		<!-- logback -->
+		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-dbcp2</artifactId>
-			<version>2.8.0</version>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>
+			<!-- <scope>test</scope> -->
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>2.0.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.8.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
@@ -186,14 +185,18 @@
 			<artifactId>tiles-jsp</artifactId>
 			<version>3.0.8</version>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-servlet</artifactId>
 			<version>3.0.8</version>
 		</dependency>
-		
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.tiles</groupId> -->
+		<!-- <artifactId>tiles-core</artifactId> -->
+		<!-- <version>3.0.8</version> -->
+		<!-- </dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-extras -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -209,15 +212,28 @@
 			<version>1.9.6</version>
 			<!-- <scope>runtime</scope> -->
 		</dependency>
-		
-		<!-- PDF 라이브러리 추가 -->
-		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-core -->
 		<dependency>
-		    <groupId>org.apache.pdfbox</groupId>
-		    <artifactId>pdfbox</artifactId>
-		    <version>2.0.22</version>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+			<version>3.0.10.RELEASE</version>
 		</dependency>
-		
+		<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-infrastructure -->
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-infrastructure</artifactId>
+			<version>3.0.10.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-test -->
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-test</artifactId>
+			<version>3.0.10.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
+
 
 	</dependencies>
 </project>
